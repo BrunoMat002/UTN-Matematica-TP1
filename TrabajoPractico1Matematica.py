@@ -5,10 +5,10 @@
 
 
 
-#Pediremos al usuario que primero elija que tabala de la verdad quiere saber
+#Pediremos al usuario que primero elija que tabla de la verdad quiere saber
 #Haremos un menu interactivo
 
-#Iniciaremos la variable opcion la cual nos permitira movernos dentro del menu
+#Iniciaremos la variable "opcion" la cual nos permitira movernos dentro del menu
 
 opcion = 0
 
@@ -20,12 +20,13 @@ while opcion != 4:
     print("3. Compuerta NOT")
     print("4. Salir")
 
-    
+
     opcion = int(input("Ingrese una de las opciones: "))
 
+#Dependiendo la opcion que el usuario eleija imprimiremos dicha tabla
 
     if opcion == 1:
-        print("\nTabla de verdad Puerta AND:")
+        print("\nTabla de verdad compuerta AND:")
         print("A | B | Salida")
         print("--------------")
         # Usamos bucles anidados para evaluar todas las combinaciones (0,0), (0,1), (1,0), (1,1)
@@ -35,7 +36,7 @@ while opcion != 4:
                 print(f"{A} | {B} |   {int(resultado)}")
 
     elif opcion == 2:
-        print("\nTabla de verdad Puerta OR:")
+        print("\nTabla de verdad compuerta OR:")
         print("A | B | Salida")
         print("--------------")
         for A in range(2):
@@ -44,7 +45,7 @@ while opcion != 4:
                 print(f"{A} | {B} |   {int(resultado)}")
 
     elif opcion == 3:
-        print("\nTabla de verdad Puerta NOT:")
+        print("\nTabla de verdad compuerta NOT:")
         print("A | Salida")
         print("----------")
         # NOT es una operación unaria, solo requiere un bucle
