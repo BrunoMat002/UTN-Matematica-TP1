@@ -3,8 +3,6 @@
 #Cree un programa que genere la tabla de verdad para una expresión booleana sencilla, como "A AND B".
 # #Extensión: Permitan al usuario elegir entre distintas operaciones lógicas.
 
-
-
 #Pediremos al usuario que primero elija que tabla de la verdad quiere saber
 #Haremos un menu interactivo
 
@@ -19,7 +17,6 @@ while opcion != 4:
     print("2. Compuerta OR")
     print("3. Compuerta NOT")
     print("4. Salir")
-
 
     opcion = int(input("Ingrese una de las opciones: "))
 
